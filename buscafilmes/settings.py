@@ -23,7 +23,7 @@ SECRET_KEY = 'django-insecure-d74_bi7ahoisn0i0(okb4lu-im686@6-^01e+z)89s@a3pv3q!
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['buscafilmes.onrender.com/']
+ALLOWED_HOSTS = ['buscafilmes.onrender.com/', 'localhost', '127.0.0.1']
 
 
 # Application definition
