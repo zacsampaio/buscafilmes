@@ -1,0 +1,17 @@
+# Ignora o ambiente virtual
+venv/
+
+# Ignora arquivos de compilação do Python
+__pycache__/
+*.py[cod]
+
+# Ignora configurações do ambiente de desenvolvimento
+.env
+.DS_Store
+
+# Ignora arquivos de banco de dados local
+db.sqlite3
+
+# Ignora outras pastas ou arquivos de cache específicos
+staticfiles/
+media/
