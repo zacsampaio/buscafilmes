@@ -1,12 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap');
-
 *{
   margin: 0;
   padding: 0;
   font-family: "Cinzel", serif;
   font-optical-sizing: auto;
   font-style: normal;
-  
 }
 
 body{
@@ -118,3 +115,5 @@ form button:hover{
     gap: 30px;
   }
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap');
