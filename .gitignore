@@ -7,11 +7,12 @@ __pycache__/
 
 # Ignora configurações do ambiente de desenvolvimento
 .env
+.venv
 .DS_Store
 
 # Ignora arquivos de banco de dados local
 db.sqlite3
 
 # Ignora outras pastas ou arquivos de cache específicos
-staticfiles/
+staticfiles
 media/
