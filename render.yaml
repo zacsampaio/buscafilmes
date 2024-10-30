@@ -7,6 +7,7 @@ services:
     runtime: python3
     buildCommand: pip install -r requirements.txt && python manage.py collectstatic --noinput
     startCommand: gunicorn buscafilmes.wsgi:application
+
     envVars:
       - key: DEBUG
         value: "false"
