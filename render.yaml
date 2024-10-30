@@ -4,12 +4,11 @@ services:
   - type: web
     name: buscafilmes
     env: python
-    runtime: python
+    runtime: python3
     buildCommand: pip install -r requirements.txt && python manage.py collectstatic --noinput
     startCommand: gunicorn buscafilmes.wsgi:application
-
     envVars:
       - key: DEBUG
         value: "false"
       - key: ALLOWED_HOSTS
-        value: "buscafilmes-test.onrender.com, localhost, 127.0.0.1"
+        value: "buscafilmes.onrender.com, localhost, 127.0.0.1"
