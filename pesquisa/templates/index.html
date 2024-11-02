@@ -14,7 +14,7 @@
       <h1>Consulta Filmes</h1>
       <form method = 'POST'>
         {% csrf_token %}
-        <input type='text' id = 'titulo' name='titulo' required placeholder="Título do filme">
+        <input type='text' id ='titulo' name='titulo' required placeholder="Título do filme">
         <button type='submit'>BUSCAR</button>
       </form>
     </div>    
@@ -26,18 +26,14 @@
     <div class="descricoes">
       {% if filme and not erro %}
       <div class="conteudo">
-        <h2>Detalhes do filme</h2>
-        <p><strong>Título:</strong> {{ filme.Title }}</p>
-        <p><strong>Ano:</strong> {{ filme.Year }}</p>
-        <p><strong>Gênero:</strong> {{ filme.Genre }}</p>
-        <p><strong>Diretor:</strong> {{ filme.Director }}</p>
-        <p><strong>Atores:</strong> {{ filme.Actors }}</p>
-        <p><strong>Nota:</strong> {{ filme.imdbRating }}</p>
-        <p><strong>Duração:</strong> {{ filme.Runtime }}</p>
-        <p><strong>Prêmios:</strong> {{ filme.Awards }}</p>
-        <p><strong>Descrição:</strong> {{ filme.Plot }}</p>
+          <h2>Detalhes do filme</h2>
+          <p><strong>Título:</strong> {{filme.title}}</p>
+          <p><strong>Título Original:</strong> {{filme.original_title}}</p>
+          <p><strong>Data de Lançamento:</strong> {{ filme.release_date}}</p>
+          <p><strong>Nota:</strong> {{ filme.vote_average }}</p> 
+          <p><strong>Descrição:</strong> {{ filme.overview}}</p>
       </div>
-      <img src= '{{filme.Poster}}' alt='Poster do Filme'>
+      <img src="{{'https://image.tmdb.org/t/p/w500'|add:filme.poster_path}}" alt="Poster do Filme">
       {% endif %}
     </div>
   </main>
