@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap');
+
 *{
   margin: 0;
   padding: 0;
@@ -33,6 +35,11 @@ main{
   margin: 30px;
   gap: 40px;
   overflow: hidden;
+}
+
+input:focus{
+  outline: none;
+  box-shadow: none;
 }
 
 .pesquisa h1{
@@ -139,6 +146,10 @@ form button:hover{
 }
 
 @media only screen and (max-width: 440px){
+  .main{
+    display: flex;
+    justify-content: flex-end;
+  }
   .pesquisa{
     display: flex;
     align-items: center;
@@ -146,8 +157,13 @@ form button:hover{
     text-align: center;
     margin: 0;
     width: 350px;
-    font-size: 12pt;
-    height: 180px;
+    font-size: 10pt;
+    height: 120px;
+    gap: 0;
+  }
+
+  form button{
+    padding: 5px;
   }
   .descricoes{
     flex-direction: column;
@@ -161,6 +177,30 @@ form button:hover{
   }
 }
 
+@media only screen and (max-width: 440px){
+  .pesquisa{
+    width: 320px
+  }
+}
 
+@media only screen and (max-width: 320px){
+  .pesquisa{
+    width: 90dvw;
+    font-size: 8pt;
+  }
 
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap');
+  #titulo{
+    width: 150px;
+    font-size: 10pt;
+  }
+
+  .descricoes{
+    width: 90dvw;
+    font-size: 8pt;
+    gap: 0;
+  }
+
+  .descricoes img{
+    width: 200px;
+  }
+}

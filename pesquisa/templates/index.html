@@ -14,7 +14,7 @@
       <h1>Consulta Filmes</h1>
       <form method = 'POST'>
         {% csrf_token %}
-        <input type='text' id ='titulo' name='titulo' required placeholder="Título do filme">
+        <input type='text' id ='titulo' name='titulo' required placeholder="Título do filme" autocomplete="off">
         <button type='submit'>BUSCAR</button>
       </form>
     </div>    
