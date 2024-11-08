@@ -120,10 +120,51 @@ form button:hover{
 
 @media only screen and (max-width: 768px){
   .descricoes{
-    width: 90vw;
-    height: auto;
+    display: flex;
+    flex-direction: row;
+    width: 80vw;
     gap: 30px;
   }
+
+  .descricoes img{
+    max-width: 250px;
+    width: 100%;
+    height: auto;
+  }
+
+  #titulo{
+    width: 250px
+  }
+
 }
+
+@media only screen and (max-width: 440px){
+  main{
+ 
+  }
+
+  .pesquisa{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    width: 350px;
+    font-size: 12pt;
+    height: 180px;
+  }
+  .descricoes{
+    flex-direction: column;
+    gap: 10px;
+    max-height: 800px;
+    font-size: 10pt;
+  }
+  .descricoes img{
+    height: 350px;
+    width: auto;
+  }
+}
+
+
 
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap');
