@@ -139,10 +139,6 @@ form button:hover{
 }
 
 @media only screen and (max-width: 440px){
-  main{
- 
-  }
-
   .pesquisa{
     display: flex;
     align-items: center;
