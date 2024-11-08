@@ -183,6 +183,26 @@ form button:hover{
   }
 }
 
+@media only screen and (max-width: 375px){
+  body{
+    height: 100vh;
+  }
+
+  .pesquisa{
+    width: 320px;
+    height: 200px;
+  }
+
+  .descricoes{
+    font-size: 8pt;
+  }
+
+  .descricoes img{
+    height: 250px;
+    width: auto;
+  }
+}
+
 @media only screen and (max-width: 320px){
   .pesquisa{
     width: 90dvw;
