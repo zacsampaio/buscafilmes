@@ -8,7 +8,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-d74_bi7ahoisn0i0(okb4lu-im686@6-^01e+z)89s@a3pv3q!'
 
 
-DEBUG = True
+DEBUG = False
 
 
 ALLOWED_HOSTS = ['buscafilmes.onrender.com', 'localhost', '127.0.0.1']
